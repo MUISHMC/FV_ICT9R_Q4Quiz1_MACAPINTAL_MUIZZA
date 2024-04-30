@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Quiz 1</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+	<style>
+		body {
+			background-image: url(https://i.pinimg.com/564x/77/44/e4/7744e44729a6e3a982df894e6b21c16f.jpg);
+		}
+		#pfp {
+			width: 150px;
+			height: 150px;
+			margin-top: 50px;
+		}
+
+		#BOXMODEL {
+			margin-top: 50px;
+		}
+
+		label {
+			color: #524C42;
+			font-family: CCAstroCity;
+			font-size: 30px;
+			padding: 4px;
+		}
+
+		#lgi {
+			background-color: #E1ACAC;
+			border: none;
+			color: white;
+			font-family: CCAstroCity;
+			font-size: 30px;
+			padding: 20px;
+            text-align: center;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+		}
+
+		.button4 {border-radius: 12px;}
+
+		#cnc {
+			background-color: #A87676;
+			border: none;
+			color: white;
+			font-family: CCAstroCity;
+			font-size: 30px;
+			padding: 20px;
+            text-align: center;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+	<center>
+		<div id="BOXMODEL" class="col-md-6">
+			<img id= "pfp" class="rounded-circle" src="PROFILE.png">
+			<br> <br>
+			<form class="form-group">
+			<label>Student No.</label>
+				<input type="text" class="form-control" id="num1">
+			<label>Password</label>
+			<input type="password" class="form-control" id="num2">
+			<br>
+			<a href="mainpage.html" class="btn btn-success" id="lgi" class="button button4">Log In</a>
+			<br>
+			<button id="cnc" onclick="Cancel()" class="button button4">Cancel</button>
+			</form>
+		</div>
+	</center>
+
+	<script type="text/javascript">
+		function Cancel() {
+			alert("Error. Try again later. Or after typing the information, click on the Log In button.")
+		}
+
+	</script>
+
+</body>
+</html>

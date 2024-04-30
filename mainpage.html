@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>Main Page</title>
+
+	<style type="text/css">
+		.navbar {
+			padding: 0;
+			font-family: CCAstroCity;
+			font-size: 20px;
+
+		}
+
+		#topnav {
+			width: 75%;
+		}
+
+		.IG {
+			padding: 10px;
+			height: 80px ;
+			width:90px ;
+		}
+
+		body {
+			background-image: url(https://i.pinimg.com/564x/11/d6/80/11d68077cd6c2812c0879cf133f0785f.jpg);
+		}
+
+		.rounded-container {
+			  display: flex;
+			  border-radius: 10px;
+			  overflow: hidden;
+			  width: 100%;
+			  box-sizing: border-box;
+			  background-color: #f2f2f2;
+			  margin-top: 250px;
+			}
+
+		
+		#rounded-image {
+			  width: 150px;
+			  height: 150px;
+			  margin: 5px;
+			  margin-left: 145px;
+			  margin-top: 30px;
+			}
+
+		.rounded-info {
+			  padding: 10px;
+			  flex: 1;
+			  margin-left: -145px;
+			}
+
+		.rounded-info h2 {
+			  font-weight: bold;
+			}
+
+		#name {
+			margin-right: 100px;
+		}
+
+		#TITLE {
+			font-family: Acki Preschool;
+			font-size: 30px;
+		}
+
+		p {
+			font-family: CCAstroCity;
+		}
+
+		#Mui {
+			margin-top: 30px;
+			margin-bottom: -200px;
+		}
+
+		#FIRSTQ {
+			width: 250px;
+			  height: 250px;
+			margin-left: 50px;
+			padding: 5px;
+		}
+
+		#BOX 
+		{
+			margin-bottom: 300px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md bg-light fixed-top">
+
+		 <img class="IG" src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1687002413-822.png">
+
+		<div id="topnav">
+
+			<ul class="navbar-nav">
+			
+			<li class="nav-item">
+				<a id="links" class="nav-link" href="#" onclick="firstquarter()">First Quarter</a>
+			</li>
+
+			<li class="nav-item">
+				<a id="links" class="nav-link" href="#" onclick="secondquarter()">Second Quarter</a>
+			</li>
+
+			
+
+			</ul>
+		</div>
+	</nav>
+	
+	<center>
+	<div class="col-md-6">
+	<div class="rounded-container">
+  			<img src="PROFILE.png" alt="Image" id="rounded-image" class="rounded-circle" id="MAINPG">
+		  <div class="rounded-info">
+		   <p> <span id="TITLE"> Name </span>   Macapintal, Muizza </p>
+		    <p> <span id="TITLE"> Age </span> fifteen (15)</p>
+		    <p> <span id="TITLE"> G AND S</span> 9 - Ruby</p>
+
+		  </div>
+		</div>
+	</div>
+
+	<p id="Mui"> Mui's Online Portfolio <br> Click on the Nav Bar!</p>
+
+	<div class="col-md-6" id="BOX">
+	<div class="rounded-container">
+  			<a href="page2.html"><p id="viewQ1"><img> </p></a>
+  			<a href="page3.html"><p id="viewQ2"></p></a>
+		</div>
+	</div>
+	</center>
+
+<script type="text/javascript">
+function firstquarter(){
+	document.getElementById('viewQ1').innerHTML="<img src='FIRSTQ.jpg' id='FIRSTQ'>";
+}
+
+function secondquarter(){
+	document.getElementById('viewQ2').innerHTML="<img src='SECONDQ.jpg' id='FIRSTQ'>";
+}
+</script>
+
+</body>
+</html>
